@@ -1,7 +1,9 @@
+const Kitten = require("./models/KittenModel");
 
 function findAll(done){
-    done();
+    Kitten.find(function(err,kittens){
+        done(kittens);
+    });
 }
-
 
 module.exports = findAll;
