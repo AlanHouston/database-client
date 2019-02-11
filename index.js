@@ -63,6 +63,7 @@ function askForInput(){
 
 function createThing(){
   askForInput();
+  console.log()
 }
 function findAllThings(){
   findAll((data)=>{
